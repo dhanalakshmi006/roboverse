@@ -373,6 +373,17 @@ body {
 }
 
 @media (max-width: 480px) {
+    .navbar-logo span {
+    font-size: 30px;   /* reduce as needed */
+    letter-spacing: 1px;
+  }
+
+  /* Hero ROBOVERSE text */
+  .logo {
+    font-size: 40px;    /* smaller hero heading */
+    letter-spacing: 2px;
+  }
+
     .navbar-container {
         padding: 0 1rem;
     }
@@ -384,9 +395,6 @@ body {
     .navbar-container .navbar-menu li a {
         font-size: 1.2rem;
         padding: 3px;
-    }
-    .logo{
-        font-size: 2.0rem;
     }
 }
 
@@ -969,3 +977,4 @@ h1::after {
   }
 
 }
+
