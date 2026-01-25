@@ -343,10 +343,11 @@ body{
     padding: 0 1rem;
   }
   .navbar-logo{
-    font-size: 1.7rem;
+    font-size: 16px;
   }
   .navbar-container .navbar-menu li a {
     font-size: 1.2rem;
     padding:3px; 
   }
+
 }
