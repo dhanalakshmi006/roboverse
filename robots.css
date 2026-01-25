@@ -380,7 +380,7 @@ body {
 
   /* Hero ROBOVERSE text */
   .logo {
-    font-size: 13px;    /* smaller hero heading */
+    font-size: 1rem;    /* smaller hero heading */
     letter-spacing: 1px;
   }
 
@@ -488,7 +488,7 @@ body {
 }
 
 .logo {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 5vw, 1rem);
     font-weight: bold;
     font-family: 'Panchang', Helvetica;
     margin-bottom: 1rem;
@@ -977,6 +977,7 @@ h1::after {
   }
 
 }
+
 
 
 
