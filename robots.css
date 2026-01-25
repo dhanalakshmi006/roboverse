@@ -347,7 +347,7 @@ body {
 }
 
 .navbar-logo span {
-  font-size: 1rem;
+  font-size: 20px;
 }
 
     .navbar-container .navbar-menu.active {
@@ -969,3 +969,4 @@ h1::after {
   }
 
 }
+
