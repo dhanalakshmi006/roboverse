@@ -316,8 +316,16 @@ body {
 /* Responsive style */
 @media (max-width: 1060px) {
     .navbar {
+        background-color: transparent;
         backdrop-filter: none;
     }
+    .navbar.scrolled {
+        background-color: #000;
+        backdrop-filter: none;    /* safe for mobile */
+    }
+    .navbar.menu-open {
+    background-color: #000;
+}
 
     .navbar-container .navbar-menu {
         display: none;
@@ -339,7 +347,7 @@ body {
 }
 
 .navbar-logo span {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
     .navbar-container .navbar-menu.active {
@@ -376,6 +384,9 @@ body {
     .navbar-container .navbar-menu li a {
         font-size: 1.2rem;
         padding: 3px;
+    }
+    .logo{
+        font-size: 2.0rem;
     }
 }
 
@@ -489,7 +500,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 2.0rem;
+    font-size: clamp(2rem, 5vw, 1.5rem);
     margin-bottom: 50px;
     background: linear-gradient(90deg, #7a6eab 0%, #7a6eab 100%);
     -webkit-background-clip: text;
@@ -876,6 +887,9 @@ h1::after {
 
         /* Responsive Design */
         @media screen and (max-width: 768px) {
+            .video-background {
+    margin-top: -10px;}
+
             .nav-links {
                 display: none;
             }
