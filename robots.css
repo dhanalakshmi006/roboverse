@@ -347,7 +347,7 @@ body {
 }
 
 .navbar-logo span {
-  font-size: 30px;
+  font-size: 1rem;
 }
 
     .navbar-container .navbar-menu.active {
@@ -384,6 +384,9 @@ body {
     .navbar-container .navbar-menu li a {
         font-size: 1.2rem;
         padding: 3px;
+    }
+    .logo{
+        font-size: 2.0rem;
     }
 }
 
@@ -486,10 +489,18 @@ body {
     letter-spacing: 3px;
 }
 
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color);
+    }
+    to {
+        text-shadow: 0 0 12px var(--primary-color), 0 0 24px var(--primary-color);
+    }
+}
 
 h1 {
     text-align: center;
-    font-size: clamp(2rem, 5vw, 50px);
+    font-size: clamp(2rem, 5vw, 1.5rem);
     margin-bottom: 50px;
     background: linear-gradient(90deg, #7a6eab 0%, #7a6eab 100%);
     -webkit-background-clip: text;
@@ -958,7 +969,3 @@ h1::after {
   }
 
 }
-
-
-
-
