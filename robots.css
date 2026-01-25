@@ -380,7 +380,7 @@ body {
 
   /* Hero ROBOVERSE text */
   .logo {
-    font-size: 20px;    /* smaller hero heading */
+    font-size: 15px;    /* smaller hero heading */
     letter-spacing: 2px;
   }
 
@@ -977,5 +977,6 @@ h1::after {
   }
 
 }
+
 
 
