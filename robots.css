@@ -374,7 +374,7 @@ body {
 
 @media (max-width: 480px) {
     .navbar-logo span {
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 1px;
   }
 
@@ -971,6 +971,7 @@ h1::after {
   }
 
 }
+
 
 
 
