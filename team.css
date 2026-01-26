@@ -118,11 +118,11 @@
         }
 
         .member-name {
-            font-size: 1.5rem;
-            font-weight: 8;
+            font-size: 1.2rem;
+            font-weight: 5px;
             margin-bottom: 5px;
             color: var(--text-light);
-            font-family:'Array',Helvetica;
+            font-family:'Satoshi',Helvetica;
         }
 
         .member-role {
@@ -286,7 +286,7 @@
 .subtitle {
   margin-top: 18px;
   font-family: 'Satoshi', Helvetica, Arial, sans-serif;
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: clamp(3.0rem, 3.0vw, 2.0rem);
   font-weight: 600;
   color: #dddddd;
 }
@@ -348,4 +348,5 @@
   }
 }
 .card:hover { transform: scale(1.02); transition: transform 0.3s ease; }
+
 
