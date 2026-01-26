@@ -208,9 +208,7 @@
             line-height: 1.5;
         }
 
-
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
+ @media screen and (max-width: 480px) {
 
             .card {
     margin-top: 30px;
@@ -226,6 +224,9 @@
   backdrop-filter: blur(6px);
   color: #fff;
 }
+ }
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
             .title{
                 font-size: 0.3rem;
             }
@@ -313,4 +314,5 @@
   transition: transform 0.3s ease;
 
 }
+
 
