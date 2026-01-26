@@ -212,8 +212,20 @@
         /* Responsive Design */
         @media screen and (max-width: 768px) {
 
-            .card{
-            padding: 2px 2px;}
+            .card {
+    margin-top: 30px;
+    width: 95%;
+    margin-left: 2.5%;
+    justify-content: center;
+    align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2px 2px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  color: #fff;
+}
             .title{
                 font-size: 0.3rem;
             }
@@ -301,3 +313,4 @@
   transition: transform 0.3s ease;
 
 }
+
