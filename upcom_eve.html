@@ -29,7 +29,7 @@
         /* Hero Section */
         .hero {
             position: relative;
-            height: 100vh;
+            height: 90vh;
             width: 100%;
             overflow: hidden;
             display: flex;
@@ -80,6 +80,7 @@
 
         .event-date {
             font-size: 1.5rem;
+            font-weight: 4px;
             margin-bottom: 2rem;
             color: var(--text-light);
             opacity: 0.9;
@@ -201,7 +202,7 @@
             position: relative;
             display: inline-block;
             width: 100%;
-            font-family: 'Array', sans-serif;
+            font-family: 'Satoshi', sans-serif;
         }
 
         .section-title::after {
@@ -600,108 +601,46 @@
             </div>
         </div>
     </section>
-
-    <!-- Competitions Section 
-    <section class="competitions-section">
+    <footer id="contact">
         <div class="container">
-            <h2 class="section-title">Competitions</h2>
-            <p class="section-subtitle">Showcase your robotics skills in these exciting challenges</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Roboverse</h3>
+                    <p>At ROBOVERSE, students come together to design, develop, and deploy robots that think, move, and solve.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/roboversemu/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/roboverse.mu/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Our Robots</a></li>
+                        <li><a href="home.html#gallery">Gallery</a></li>
+                        <li><a href="upcom_eve.html">Aeon</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Mahindra University
+Survey No: 62/1A, Bahadurpally,
+Jeedimetla, Hyderabad,
+Telangana 500043</li>
+                        <!-- <li><i class="fas fa-phone"></i> President: 63023 07230</li>
+                        <li><i class="fas fa-phone"></i> Vice-President: 77788 99678</li> -->
+                        <li><i class="fas fa-envelope"></i> <a style="overflow-wrap: anywhere;" href="mailto:muroboticsclub@mahindrauniversity.edu.in">muroboticsclub@mahindrauniversity.edu.in</a></li>
+                    </ul>
+                </div>
+            </div>
             
-            <div class="competitions-grid">
-                <div class="competition-card">
-                    <div class="competition-image" style="background-image: url('https://picsum.photos/seed/line-follower/400/200.jpg');"></div>
-                    <div class="competition-content">
-                        <h3 class="competition-title">Fast Line Follower</h3>
-                        <p class="competition-description">Design and program a robot that can follow a complex line course at high speed. The fastest robot to complete the course wins!</p>
-                        <div class="competition-details">
-                            <span class="competition-format">Single Elimination</span>
-                            <a href="#" class="competition-link">Learn More →</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="competition-card">
-                    <div class="competition-image" style="background-image: url('https://picsum.photos/seed/robowars/400/200.jpg');"></div>
-                    <div class="competition-content">
-                        <h3 class="competition-title">Robowars</h3>
-                        <p class="competition-description">Build a combat robot and face off against opponents in our battle arena. Strategy, design, and control skills are key to victory.</p>
-                        <div class="competition-details">
-                            <span class="competition-format">Tournament</span>
-                            <a href="#" class="competition-link">Learn More →</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="competition-card">
-                    <div class="competition-image" style="background-image: url('https://picsum.photos/seed/robosoccer/400/200.jpg');"></div>
-                    <div class="competition-content">
-                        <h3 class="competition-title">Robosoccer</h3>
-                        <p class="competition-description">Program autonomous robots to play soccer in a team-based competition. The team with the most goals wins the championship.</p>
-                        <div class="competition-details">
-                            <span class="competition-format">Single Elimination</span>
-                            <a href="#" class="competition-link">Learn More →</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="copyright">
+                <p>&copy; 2025 Roboverse, Mahindra University. </p>
             </div>
         </div>
-    </section>
--->
-    <!-- Registration Section -->
-    <section id="registration" class="registration-section">
-        <div class="container">
-            <div class="registration-container">
-                <h2 class="section-title">Poster</h2>
-                <h2 class="section-title">Registeration for AEON</h2>
-                <!--
-                <p class="section-subtitle">Secure your spot in the most exciting robotics event of the year</p>
-                
-                <form class="registration-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" class="form-control" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="institution">Institution/Organization</label>
-                        <input type="text" id="institution" class="form-control" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="competitions">Select Competitions</label>
-                        <select id="competitions" class="form-control" multiple>
-                            <option value="line-follower">Fast Line Follower</option>
-                            <option value="robowars">Robowars</option>
-                            <option value="robosoccer">Robosoccer</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Additional Information</label>
-                        <textarea id="message" class="form-control" rows="4"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-button">Register Now</button>
-                </form>
-            </div>
-        </div>
-    </section>-->
+    </footer>
 
     <script>
         // Navbar scroll effect
