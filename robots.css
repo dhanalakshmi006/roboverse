@@ -889,6 +889,9 @@ h1::after {
 
         /* Responsive Design */
         @media screen and (max-width: 768px) {
+            .hero-content{
+                top:50%;
+            }
             .video-background {
     margin-top: -10px;}
 
@@ -971,6 +974,7 @@ h1::after {
   }
 
 }
+
 
 
 
