@@ -45,6 +45,8 @@
         .footer-links {
             list-style: none;
             font-family:'Satoshi',Helvetica;
+            font-size:10px;
+         
         }
 
         .footer-links li {
@@ -137,3 +139,4 @@
             }
 
         } 
+
