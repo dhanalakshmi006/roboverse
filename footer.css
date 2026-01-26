@@ -24,7 +24,7 @@
             font-family:'Satoshi',Helvetica;
         }
         .footer-title {
-            font-size: 1.0rem;
+            font-size: 1.4rem;
             margin-bottom: 20px;
             color: var(--primary-color);
             position: relative;
@@ -45,7 +45,6 @@
         .footer-links {
             list-style: none;
             font-family:'Satoshi',Helvetica;
-            font-size:10px;
          
         }
 
