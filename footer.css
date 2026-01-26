@@ -29,7 +29,7 @@
             color: var(--primary-color);
             position: relative;
             display: inline-block;
-            font-family:'Panchang',Helvetica;
+            font-family:'Satoshi',Helvetica;
         }
 
         .footer-title::after {
@@ -135,4 +135,5 @@
             .leadership-row {
                 grid-column: span 2;
             }
+
         } 
