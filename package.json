@@ -1,15 +1,23 @@
 {
-  "name": "roboverse-main",
+  "name": "roboverse",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhanalakshmi006/roboverse.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dhanalakshmi006/roboverse/issues"
+  },
+  "homepage": "https://github.com/dhanalakshmi006/roboverse#readme",
   "dependencies": {
     "nodemailer": "^8.0.1"
   }
