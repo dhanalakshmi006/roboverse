@@ -152,9 +152,8 @@
             display: inline-block;
             padding: 15px 40px;
             background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-            color: white;
+            color: #151515;
             text-decoration: none;
-            border-radius: 30px;
             font-weight: 600;
             transition: all 0.3s ease;
             font-family: 'Satoshi', sans-serif;
@@ -414,7 +413,7 @@
             position: absolute;
             top: 20px;
             background: var(--gradient-primary);
-            color: white;
+            color: #151515;
             padding: 8px 20px;
             border-radius: 25px;
             font-weight: 600;
@@ -472,7 +471,7 @@
             align-items: center;
             justify-content: center;
             font-size: 1.8rem;
-            color: white;
+            color: #151515;
             box-shadow: 0 8px 25px rgba(122, 110, 171, 0.3);
             transition: transform 0.3s ease;
         }
