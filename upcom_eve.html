@@ -13,6 +13,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sponsors.css">
     <link rel="stylesheet" href="footer.css">
     
     <style>
@@ -182,197 +183,6 @@
             font-family: 'Satoshi', sans-serif;
         }
 
-        /* Schedule Section */
-        .schedule-section {
-            padding: 80px 0;
-            background-color: rgba(122, 110, 171, 0.05);
-        }
-
-        .container {
-            width: 85%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            font-family: 'Satoshi', sans-serif;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 3px;
-            background-color: var(--primary-color);
-        }
-
-        .section-subtitle {
-            text-align: center;
-            margin-bottom: 60px;
-            color: var(--text-light);
-            opacity: 0.8;
-            font-family: 'Satoshi', sans-serif;
-        }
-
-        .schedule-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .schedule-card {
-            background: rgba(122, 110, 171, 0.1);
-            border-radius: 15px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            position: relative;
-            border: 1px solid rgba(122, 110, 171, 0.3);
-        }
-
-        .schedule-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(122, 110, 171, 0.3);
-        }
-
-        .schedule-time {
-            background: var(--gradient-color);
-            padding: 15px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: white;
-            font-family: 'Satoshi', sans-serif;
-        }
-
-        .schedule-content {
-            padding: 20px;
-        }
-
-        .schedule-title {
-            font-size: 1.4rem;
-            font-weight:10px;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-            font-family:'Satoshi',Helvetica;
-        }
-
-        .schedule-description {
-            color: var(--text-light);
-            opacity: 0.8;
-            line-height: 1.5;
-            font-family: 'Satoshi', sans-serif;
-        }
-
-        .schedule-icon {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 1.5rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* Competitions Section */
-        .competitions-section {
-            padding: 80px 0;
-            background-color: var(--primary-dark);
-        }
-
-        .competitions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .competition-card {
-            background: rgba(122, 110, 171, 0.1);
-            border-radius: 15px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(122, 110, 171, 0.3);
-        }
-
-        .competition-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(122, 110, 171, 0.3);
-        }
-
-        .competition-image {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .competition-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, transparent 0%, rgba(30, 30, 30, 0.8) 100%);
-        }
-
-        .competition-content {
-            padding: 25px;
-        }
-
-        .competition-title {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: var(--primary-color);
-            font-family: 'Panchang', sans-serif;
-        }
-
-        .competition-description {
-            color: var(--text-light);
-            opacity: 0.8;
-            line-height: 1.5;
-            margin-bottom: 20px;
-            font-family: 'Satoshi', sans-serif;
-        }
-
-        .competition-details {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .competition-format {
-            display: inline-block;
-            padding: 5px 10px;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            font-family: 'Satoshi', sans-serif;
-        }
-
-        .competition-link {
-            color: var(--primary-light);
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            font-family: 'Satoshi', sans-serif;
-        }
-
-        .competition-link:hover {
-            color: var(--primary-color);
-        }
-
         /* Registration Section */
         .registration-section {
             padding: 80px 0;
@@ -465,17 +275,12 @@
             .form-row {
                 grid-template-columns: 1fr;
             }
-
-            .schedule-container,
-            .competitions-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id ="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-logo">
     <img src="img/logo1.png" alt="Roboverse Logo" class="navbar-logo-img">
@@ -501,12 +306,12 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="event-name">AEON</h1>
-            <p class="event-date">March 12-14, 2024</p>
+            <p class="event-date"><b>April 24-26, 2024</b></p>
             <p class="event-subtitle">
-                Join us for the ultimate robotics competition where innovation meets excitement. 
-                Three days of intense battles, precision challenges, and cutting-edge technology.
+              <b> Join us for the ultimate robotics competition where innovation meets excitement. 
+                Three days of intense battles, precision challenges, and cutting-edge technology.</b>
             </p>
-            <a href="#registration" class="cta-button">Register Now</a>
+            <a href="https://www.mu-aeon.com/events" class="cta-button" target="_blank">Register Now</a>
         </div>
         <div class="scroll-indicator">
             <i class="fas fa-chevron-down fa-2x" style="color: var(--primary-color);"></i>
@@ -537,70 +342,300 @@
             </div>
         </div>
     </section>
-
-    <!-- Schedule Section -->
-    <section id="schedule" class="schedule-section">
+    <!-- Sponsors Section -->
+    <section class="sponsors-section">
         <div class="container">
-            <h2 class="section-title">Event Schedule</h2>
-            <p class="section-subtitle">Two days of intense robotics competitions and activities</p>
-            
-            <div class="schedule-container">
-                <div class="schedule-card">
-                    <div class="schedule-time">9:30 AM - 12:30 PM</div>
-                    <div class="schedule-content">
-                        <h3 class="schedule-title">Fast Line Follower</h3>
-                        <p class="schedule-description">Test your robot's speed and precision in our challenging line following course. Single elimination tournament with prizes for the top three finishers.</p>
-                        <i class="fas fa-route schedule-icon"></i>
+            <div class="section-header">
+                <h2 class="section-title">Our Sponsors</h2>
+                <p class="event-subtitle">We're grateful for the incredible support from our sponsors</p>
+            </div>
+
+            <!-- Sponsors Track (Infinite Scroll) -->
+            <div class="sponsors-track-container">
+                <div class="sponsors-track">
+                    <!-- First Set of Sponsors -->
+                    <div class="sponsor-logo">
+                        <img src="img/mu-1.png" alt="Sponsor 1">
                     </div>
-                </div>
+                    <div class="sponsor-logo">
+                        <img src="img/sponsor2.png" alt="Sponsor 2">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="img/sponsor3.png" alt="Sponsor 3">
+                    </div>
                 
-                <div class="schedule-card">
-                    <div class="schedule-time">12:30 PM - 1:30 PM</div>
-                    <div class="schedule-content">
-                        <h3 class="schedule-title">Lunch Break</h3>
-                        <p class="schedule-description">Refuel and recharge for the afternoon competitions. Food and beverages will be provided for all participants.</p>
-                        <i class="fas fa-utensils schedule-icon"></i>
+                    <!-- Duplicate Set for Infinite Loop -->
+                    <div class="sponsor-logo">
+                        <img src="img/mu-1.png" alt="Sponsor 1">
                     </div>
-                </div>
-                
-                <div class="schedule-card">
-                    <div class="schedule-time">1:30 PM - 5:30 PM</div>
-                    <div class="schedule-content">
-                        <h3 class="schedule-title">Robowars</h3>
-                        <p class="schedule-description">The ultimate battle of robots! Watch as custom-built machines face off in our combat arena. May the best bot win!</p>
-                        <i class="fas fa-robot schedule-icon"></i>
+                    <div class="sponsor-logo">
+                        <img src="img/sponsor2.png" alt="Sponsor 2">
                     </div>
-                </div>
-                
-                <div class="schedule-card">
-                    <div class="schedule-time">5:30 PM - 6:30 PM</div>
-                    <div class="schedule-content">
-                        <h3 class="schedule-title">Snacks Break</h3>
-                        <p class="schedule-description">A short break to grab some snacks and network with fellow robotics enthusiasts.</p>
-                        <i class="fas fa-cookie schedule-icon"></i>
+                    <div class="sponsor-logo">
+                        <img src="img/sponsor3.png" alt="Sponsor 3">
                     </div>
+                    
                 </div>
-                
-                <div class="schedule-card">
-                    <div class="schedule-time">6:30 PM - 8:30 PM</div>
-                    <div class="schedule-content">
-                        <h3 class="schedule-title">Robosoccer</h3>
-                        <p class="schedule-description">Experience the future of sports with our autonomous soccer competition. Single elimination tournament with exciting matches.</p>
-                        <i class="fas fa-futbol schedule-icon"></i>
-                    </div>
-                </div>
-                
-                <div class="schedule-card">
-                    <div class="schedule-time">8:30 PM Onwards</div>
-                    <div class="schedule-content">
-                        <h3 class="schedule-title">Wrap-up & Dinner</h3>
-                        <p class="schedule-description">Join us for dinner as we celebrate the day's competitions and announce the winners. Followed by accommodation arrangements.</p>
-                        <i class="fas fa-glass-cheers schedule-icon"></i>
-                    </div>
-                </div>
+            </div>
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <h3 class="section-title">Partner With Us</h3><br>
+                <p class="event-subtitle">
+                    We’re calling for sponsors to be part of Hyderabad’s most anticipated competitive robotics event, hosted at Mahindra University.<br>
+                    Event highlights: 3500+ students. 100+ competitors. 2 days of high-stakes innovation.</p>
+                <a href="contact.html" class="cta-button">Become a Sponsor</a>
             </div>
         </div>
     </section>
+
+    <script>
+        // Pause animation on hover
+        const track = document.querySelector('.sponsors-track');
+        const trackContainer = document.querySelector('.sponsors-track-container');
+        
+        trackContainer.addEventListener('mouseenter', () => {
+            track.style.animationPlayState = 'paused';
+        });
+        
+        trackContainer.addEventListener('mouseleave', () => {
+            track.style.animationPlayState = 'running';
+        });
+
+        // Optional: Add click event to sponsor logos
+        document.querySelectorAll('.sponsor-logo').forEach(logo => {
+            logo.addEventListener('click', function() {
+                // You can add functionality here, like opening sponsor's website
+                console.log('Sponsor logo clicked');
+            });
+        });
+    </script>
+
+   <div class="bg-gradient"></div>
+    
+    <header class="header">
+        <h1>AEON SCHEDULE</h1>
+        <p class="header-subtitle">Two days of intense robotics competition and innovation</p>
+    </header>
+
+    <main class="schedule-container">
+        <!-- Tab Navigation -->
+        <nav class="tab-navigation">
+            <button class="tab-button active" onclick="switchDay('day1', this)">
+                <i class="fas fa-calendar-day"></i>
+                Day 1 - April 25
+            </button>
+            <button class="tab-button" onclick="switchDay('day2', this)">
+                <i class="fas fa-calendar-day"></i>
+                Day 2 - April 26
+            </button>
+        </nav>
+
+        <!-- Day 1 Schedule -->
+        <section id="day1" class="schedule-content active">
+            <div class="timeline">
+                <!-- FLF Event -->
+                <div class="timeline-item">
+                    <div class="time-badge">10:00 - 12:30</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3 class="event-title">Fast Line Follower</h3>
+                        </div>
+                        <p class="event-description">
+                            Watch autonomous robots navigate complex tracks at lightning speed. 
+                            Experience the perfect blend of precision engineering and advanced algorithms 
+                            as teams compete for the fastest lap time.
+                        </p>
+                        <div class="event-venue">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Venue: </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robowars Event -->
+                <div class="timeline-item">
+                    <div class="time-badge">14:30 - 18:00</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="event-title">Robowars</h3>
+                        </div>
+                        <p class="event-description">
+                            The ultimate battle of mechanical might! Witness custom-built combat robots 
+                            face off in the arena, showcasing raw power, strategic design, and combat prowess 
+                            in electrifying one-on-one battles.
+                        </p>
+                        <div class="event-venue">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Venue: </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robosoccer Event -->
+                <div class="timeline-item">
+                    <div class="time-badge">18:30 - 19:30</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <h3 class="event-title">Robosoccer</h3>
+                        </div>
+                        <p class="event-description">
+                            Experience the future of sports as autonomous robots compete in soccer matches. 
+                            Marvel at advanced AI, computer vision, and teamwork as robotic teams battle 
+                            for goals and glory.
+                        </p>
+                        <div class="event-venue">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Venue: </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day 2 Schedule -->
+        <section id="day2" class="schedule-content">
+            <div class="timeline">
+                <!-- FLF Event -->
+                <div class="timeline-item">
+                    <div class="time-badge">10:00 - 12:30</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3 class="event-title">Fast Line Follower</h3>
+                        </div>
+                        <p class="event-description">
+                            Final rounds of the Fast Line Follower competition. 
+                            The fastest robots from Day 1 compete in intense finals to crown 
+                            the ultimate speed champion of AEON.
+                        </p>
+                        <div class="event-venue">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Venue: </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robosoccer Event -->
+                <div class="timeline-item">
+                    <div class="time-badge">13:00 - 14:00</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <h3 class="event-title">Robosoccer</h3>
+                        </div>
+                        <p class="event-description">
+                            Final matches of Robosoccer. 
+                            Watch the best autonomous soccer teams compete for the 
+                            coveted AEON Robosoccer trophy in thrilling matches.
+                        </p>
+                        <div class="event-venue">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Venue: </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robowars Event -->
+                <div class="timeline-item">
+                    <div class="time-badge">14:30 - 18:00</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="event-header">
+                            <div class="event-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="event-title">Robowars</h3>
+                        </div>
+                        <p class="event-description">
+                            The grand finale of Robowars! Witness the ultimate championship battles 
+                            as the strongest combat robots compete for the title. Experience the 
+                            spectacular conclusion of AEON's premier combat event.
+                        </p>
+                        <div class="event-venue">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Venue: </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Tab switching function
+        function switchDay(dayId, buttonElement) {
+            // Remove active class from all buttons and contents
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelectorAll('.schedule-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Add active class to clicked button and corresponding content
+            buttonElement.classList.add('active');
+            document.getElementById(dayId).classList.add('active');
+
+            // Reset animations for timeline items
+            const timelineItems = document.querySelectorAll(`#${dayId} .timeline-item`);
+            timelineItems.forEach((item, index) => {
+                item.style.animation = 'none';
+                item.offsetHeight; // Trigger reflow
+                item.style.animation = `fadeInScale 0.8s ease forwards`;
+                item.style.animationDelay = `${index * 0.2}s`;
+            });
+        }
+
+        // Add interactive hover effects
+        document.querySelectorAll('.timeline-content').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.03)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Initialize animations on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate timeline items on initial load
+            const timelineItems = document.querySelectorAll('#day1 .timeline-item');
+            timelineItems.forEach((item, index) => {
+                item.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+
+        // Add smooth scroll behavior
+        document.documentElement.style.scrollBehavior = 'smooth';
+
+        // Parallax effect on scroll
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const bgGradient = document.querySelector('.bg-gradient');
+            if (bgGradient) {
+                bgGradient.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
     <footer id="contact">
         <div class="container">
             <div class="footer-content">
@@ -653,24 +688,10 @@ Telangana 500043</li>
             }
         });
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
         // Countdown Timer
         // Set the date we're counting down to
         // Update this with the actual date when confirmed
-        const countDownDate = new Date("Mar 12, 2024 09:30:00").getTime();
+        const countDownDate = new Date("Apr 25, 2026 10:00:00").getTime();
         
         // Update the count down every 1 second
         const countdownFunction = setInterval(function() {
@@ -704,29 +725,6 @@ Telangana 500043</li>
                 document.querySelector(".countdown-section h2").innerText = "Event is Live!";
             }
         }, 1000);
-
-        // Form submission
-        document.querySelector('.registration-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const formData = {
-                firstName: document.getElementById('firstName').value,
-                lastName: document.getElementById('lastName').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                institution: document.getElementById('institution').value,
-                competitions: Array.from(document.getElementById('competitions').selectedOptions).map(option => option.value),
-                message: document.getElementById('message').value
-            };
-            
-            // Here you would normally send the data to a server
-            // For this demo, we'll just show a success message
-            alert('Registration successful! We will contact you soon with more details.');
-            
-            // Reset form
-            this.reset();
-        });
     </script>
     <script src="script.js"></script>
 </body>
